@@ -1,0 +1,57 @@
+<samlp:Response ID="_8e8dc5f69a98cc4c1ff3427e5ce34606fd672f91e6" Version="2.0" IssueInstant="2014-07-17T01:01:48Z" Destination="https://sp.example.org/SAML/POST" InResponseTo="ONELOGIN_4fee3b046395c4e751011e97f8900b5273d56685" Consent="https://sp.example.org/consent" xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">
+<saml:Issuer>https://idp.example.org</saml:Issuer>
+<samsssslp:Extensions>>>>>
+<new_element xmlns="new:namespace">
+</new_element>
+</samlp:Extensions>
+<samlp:Status>
+<samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success"/>
+<samlp:StatusMessage>
+</samlp:StatusMessage>
+<samlp:StatusDetail>
+<samlp:StatusDetail>
+</samlp:StatusDetail>
+</samlp:StatusDetail>
+</samlp:Status>
+<saml:Assertion xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="_d71a3a8e9fcc45c9e9d248ef7049393fc8f04e5f75" IssueInstant="2014-07-17T01:01:48Z" Version="2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<saml:Issuer>https://idp.example.org</saml:Issuer>
+<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+<ds:Reference URI="#_d71a3a8e9fcc45c9e9d248ef7049393fc8f04e5f75">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ds:DigestValue>36d02IPeUymjYVlzVFbtSFufMvCPcoOoKRfre4Gw/3g=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue>rpIL+xuH0SdEwf5Aap8tMr0jolP4D2cbPAYJEXym1bnykhQ/AxvQYWZ7du5VMKlC fXRcObFkYqMQ0kLnWZrNhuqWhE5i4rL8UzeXwq8BH6viJPz03B5YL45wMZBTPEaL 0UMfMUuXwKIcBUz4OtXjsnaoFtDQWArotEOIXvOLV6+c1GEkfH6OAQ2bdTHGZWNp Xw9r5GdgPxTH2wwCG1wglsnLrWkHH5gUDP1NdtglpgR5HfJ05jUTCG2YWwIbpr9A DGqeFV2SzJRAKDwOnN4JTBQo9yzhdmzmKXzmySoiV/K0Ito3964FGq/VGwHfhJoR P2v18Do8RCI2TxLJ9iXx8yDpgf7V9fmgZFeBbbRyqD7RgotjypFlrxAysROPjeFv Ikj1WPLy1KpPCIH6kCxuU3jRw8vr2CpgQmyGpBSZdD5UrPF451GdeUhC6amn2VOS ooAbFZ4oJTBqTOGirf9+Ax95b+3BfskXfCB75ongAM1uSVI2EbrF3sEG9alPgN4B UQJmqacS1h/ElV1nUzfSdJ0d/iqxRfb10VDdP8xl1CaMVHxaSw52dqCMfDruHfok gFkF6uTCHN4OapWXB7iJrg1GI0p79aeXgY5+zd/HX2SpdjaYej+4Tqw4Cw/xgJfK DnW6pIyMAN0WOW+9CataUnmV3NDmXk6GLLKgNE5BKsc=</ds:SignatureValue>
+<ds:KeyInfo>
+<ds:X509Data>
+<ds:X509SubjectName>O=Internet Widgits Pty Ltd,ST=Some-State,C=AU</ds:X509SubjectName>
+<ds:X509Certificate>MIIFazCCA1OgAwIBAgIUGmwU1/m0Tlv0HVIyqlsYlFeVRqUwDQYJKoZIhvcNAQEF BQAwRTELMAkGA1UEBhMCQVUxEzARBgNVBAgMClNvbWUtU3RhdGUxITAfBgNVBAoM GEludGVybmV0IFdpZGdpdHMgUHR5IEx0ZDAeFw0yMjA2MTcwODEwNDJaFw0yMzA2 MTcwODEwNDJaMEUxCzAJBgNVBAYTAkFVMRMwEQYDVQQIDApTb21lLVN0YXRlMSEw HwYDVQQKDBhJbnRlcm5ldCBXaWRnaXRzIFB0eSBMdGQwggIiMA0GCSqGSIb3DQEB AQUAA4ICDwAwggIKAoICAQCz5Z56iZ6WQGVCjrdNrGS83vDfVbmzzB2g+ghAtOQo jrlo/TbeTU8XNpKNz6j02FYR+BIFr37r7VC4iNNpmQRHhvv6VqoupdcjC9Cs3cw0 ert3RkPvepK9CCTriHXtgC5kDmaI4Bj4ib70KnpLdbezYcQJ6cFpa4t4YfElRavS k384V8yU84lz7nbJN16j79GmV5FlfusjyZNQvnN9MGBZ+jeQ404lVSGvq6OCegwj gE0xgbAaeRew2A5PUGnpaF1x95x1qpouMFk9aPLI9MFWz+wyLbq3JZ9cLq+v4iIO 1GFyEPeLUuIsSujFhF3QW0v9RPYpEkToHM9PgGvxMIyUxvwHZhjLYN37tdyDL+83 RG5jtqEaUEqDaz6YfEOukManmV2XwDOlDUOh1CFA/TkgzfcOymx9KveiS3xWxrGp z9dj5EnTSb0MXNWAyVpXyhSquH+rUF4yUB9p1jk05sLdf1QdtgL9gCYwbNWX8x4A dj8mfthR1N2V04fD2PyUNzv2phfYWELdIbTBWH6E1fTBMFOgmem/qA0NevsOGfpS 4aGOUH0QWiaoMNdPe9u76CwmVDhLO/ERIUKnP8urrPxNdsrHFyQCnKZK05hodtRp A7KJZrNd1c97efZj1BsEUA9BkjDJs6LpUgROi60lNeTxD2/R9yDyHP7qepmUOCYI gQIDAQABo1MwUTAdBgNVHQ4EFgQUUivHuq4EiOOstzA4+7G4wrmmNYAwHwYDVR0j BBgwFoAUUivHuq4EiOOstzA4+7G4wrmmNYAwDwYDVR0TAQH/BAUwAwEB/zANBgkq hkiG9w0BAQUFAAOCAgEAlyooMPKHvADqCZ3CAKgoKxQocGh24x557A84QwN7tosT NKZIuVp213a0Vg8QoHrjxPvhCfT/e6jtKmdNcMLvwizPlLpHkPG+sfJEogHuCRhE yc3OrPxmoBJQjCLSk/lCS5VASvpgfhPVU9a7NF/xFxVo8nXbIlhQrYN1vIvp6uK6 De+E6gHfOVW1NlCnO640BCNV+SDoCN0cXdMFO1v40DKFaW7UEtVfmmA0WiXq57CB fPeMrChHwx7e0VtqXtP9mt5GEiIWe+DYOOY1Wp53Lo99iiMx1SCna4G4aXSlve9X Hx18GV4NNEeaEmAH4aoo1zCyy6JF+HhUvzHeQo6DGBSlvW5rGHYAebnfEUHxoCR/ hkULBbNRiHt67iMX3wqNec5JkHDmAQxykNJge+/20B6xhmO3bMVkEy+gEV9QgnCB 0seHz/YE2N7CMF5UGPTtMvxz9jC6lBXkQJufHM79thTHie2n2r7uqEfShaHo169w TzPJZiy8/t1NCC+A+nwR8lhUhPpIucpoZ3myWw1+E4YTpBxitf0G7hh3pKsferUC +MC8FHHbPiGJmfuasZyJ/aqWbUYgNSxkabpu5caHnTgc+trrDP1Z+80/rwpLWkD1 O7UqjunOt8jBcBvXxpJHUtzhK0KzJVAZIoKsNdXNRcTVViSt+9bPEmVgURcRP6o=
+</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+</ds:Signature>
+<saml:Subject>
+<saml:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient" SPNameQualifier="https://sp.example.org/shibboleth">valid_subject</saml:NameID>
+<saml:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+<saml:SubjectConfirmationData InResponseTo="ONELOGIN_4fee3b046395c4e751011e97f8900b5273d56685" NotOnOrAfter="2024-01-18T06:21:48Z" Recipient="https://sp.example.org/shibboleth"/>
+</saml:SubjectConfirmation>
+</saml:Subject>
+<saml:Conditions NotBefore="2014-07-17T01:01:18Z" NotOnOrAfter="2024-01-18T06:21:48Z">
+<saml:AudienceRestriction xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">
+<saml:Audience>https://sp.example.org/shibboleth</saml:Audience>
+</saml:AudienceRestriction>
+</saml:Conditions>
+<saml:AuthnStatement AuthnInstant="2014-07-17T01:01:48Z" SessionIndex="_be9967abd904ddcae3c0eb4189adbe3f71e327cf93" SessionNotOnOrAfter="2024-07-17T09:01:48Z">
+<saml:AuthnContext>
+<saml:AuthnContextDecl>https://sp.example.org/shibboleth</saml:AuthnContextDecl>
+</saml:AuthnContext>
+</saml:AuthnStatement>
+</saml:Assertion>
+</samlp:Response>

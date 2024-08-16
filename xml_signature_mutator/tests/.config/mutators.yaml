@@ -1,0 +1,73 @@
+# Load plugins
+mutator_plugins:
+  - change_attribute
+  - substitute_content
+  - change_reference
+  - copy_subtree
+  - delete_random_node
+  - insert_cdata
+  - insert_comment
+  - insert_dtd
+  - insert_element
+  - insert_special_char
+  - move_subtree
+  - randomize_content
+  - fallback_mutator
+
+# Configure plugins
+
+fallback_mutator_cfg:
+  ## Insert into elements
+  - type: fallback_mutator
+
+mutator_cfg:
+  ## Insert special stuff
+  - type: insert_dtd
+    identifier: idt # anywhere option for more randomized fuzzing?
+
+  - type: insert_cdata
+    identifier: icd
+
+  - type: insert_comment
+    identifier: ico
+
+  - type: insert_special_char
+    identifier: isc
+
+  ## Attribute fuzzing
+
+  - type: change_attribute
+    identifier: cat
+
+  - type: change_reference
+    identifier: chr
+
+  ## Randomize content
+
+  - type: substitute_content
+    identifier: sco
+
+  - type: randomize_content
+    identifier: rco
+
+  ## Deletions
+
+  - type: delete_random_node
+    identifier: drn
+
+  - type: delete_random_node
+    identifier: dst
+    delete_children: True
+
+  ## Subtree Operations
+
+  - type: copy_subtree
+    identifier: cst
+
+  - type: move_subtree
+    identifier: mvs
+
+  ## Insert elements / subtrees
+
+  - type: insert_element
+    identifier: iel

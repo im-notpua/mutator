@@ -1,0 +1,11 @@
+# Name must match module or file for which logging is set
+# Default for everything is INFO
+# Examples:
+# "metrics" sets logging for all metrics in "metrics" directory
+# "metrics.dummy_metric" sets logging only for dummy_metric
+
+# special case: "default" sets the default log level for all parts
+default: ERROR
+# afl_interface: DEBUG
+# mutators: DEBUG
+

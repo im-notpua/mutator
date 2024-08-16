@@ -1,0 +1,12 @@
+# Load plugins
+metric_plugins:
+  - dummy_metric
+  - well_formed
+  - valid_saml
+  - new_findings
+
+# Configure plugins
+
+metric_cfg:
+  - type: dummy_metric
+    identifier: wf

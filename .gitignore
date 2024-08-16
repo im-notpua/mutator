@@ -1,0 +1,4 @@
+*.pyc
+*.bak
+/xml_signature_mutator/.log
+/xml_signature_mutator/tests/.log/

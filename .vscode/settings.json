@@ -1,0 +1,24 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/timo/repos/master-thesis/fuzzer/xml_signature_fuzzer"
+    ],
+    "python.defaultInterpreterPath": "/home/timo/.virtualenvs/xml_signature_fuzzer/bin/python",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintPath": "/home/timo/.virtualenvs/xml_signature_fuzzer/bin/pylint",
+    "python.linting.lintOnSave": true,
+    "python.formatting.provider": "black",
+    "editor.formatOnSaveMode": "file",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true,
+    },
+    "python.analysis.extraPaths": [
+        "/home/timo/repos/master-thesis/fuzzer/xml_signature_fuzzer"
+    ],
+    "cSpell.words": [
+        "Jost",
+        "lxml",
+        "Rossel"
+    ]
+}

@@ -1,0 +1,31 @@
+[tool.black]
+line-length = 100
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 100
+
+[tool.pylint.messages_control]
+disable = "E1136, too-many-arguments"
+
+[tool.pylint.format]
+max-line-length = "100"
+
+[tool.poetry]
+name = "xml-signature-mutator"
+version = "0.1.0"
+description = ""
+authors = ["Timo Wiese <twiese@mail.upb.de>"]
+readme = "README.md"
+packages = [{include = "xml_signature_mutator"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyyaml = "^6.0"
+python3-saml = "^1.15.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
